@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('links', function (Blueprint $table) {
             $table->id();
-            $table->string('full_path', 1024);
+            $table->string('full_path', 512)->unique();
             $table->string('short_path');
+            $table->string('hash')->unique();
             $table->string('title')->nullable();
             $table->timestamps();
         });

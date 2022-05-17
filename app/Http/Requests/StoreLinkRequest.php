@@ -11,9 +11,9 @@ class StoreLinkRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,15 @@ class StoreLinkRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => 'max:255',
+            'full_path' => 'required|max:512|url',
         ];
     }
+
+    /**
+     * The URI that users should be redirected to if validation fails.
+     *
+     * @var string
+     */
+    protected $redirect = '/errors';
 }

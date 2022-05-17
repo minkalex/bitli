@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LinkController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+Route::get('/errors', function () {
+    return view('errors');
 });
+
+Route::resource('links', LinkController::class);
+
+Route::get('/{dummy}', IndexController::class)->where('dummy', '.*');

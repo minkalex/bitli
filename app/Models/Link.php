@@ -13,5 +13,6 @@ class Link extends Model
         'full_path',
         'short_path',
         'title',
+        'hash',
     ];
 }
