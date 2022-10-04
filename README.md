@@ -12,3 +12,9 @@ The system generates a short unique URL with 6 hash symbols, which contains alph
 The algorithm recognizes duplicate URLs and instead of generating new short URLs, shows previously created URLs.
 
 URL checked using the ["Google Safe Browsing" API](https://developers.google.com/safe-browsing/v4).
+![create](https://user-images.githubusercontent.com/28041087/193757193-e1b6f70d-e5bb-4a77-951d-9679f993316c.png)
+![index](https://user-images.githubusercontent.com/28041087/193756793-3fec7a61-4e3a-4ed2-8aa0-cf65d767d719.png)
+![edit](https://user-images.githubusercontent.com/28041087/193757636-97134c3b-290e-4888-9c6d-7fb28f31ad31.png)
+![delete](https://user-images.githubusercontent.com/28041087/193757838-42f4860b-6e21-4304-b75f-a886473551a3.png)
+![error](https://user-images.githubusercontent.com/28041087/193759364-bb9184db-bf2e-4285-85b8-062a8edae88d.png)
+![error2](https://user-images.githubusercontent.com/28041087/193759797-7d70008d-8279-4382-a0c7-c5975a7bb189.png)
